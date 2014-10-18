@@ -10,7 +10,7 @@ relative_permalinks: true
 
 # Setup
 title:               Haisum's Blog
-tagline:             'I think, therfore I am'
+tagline:             "It's not a bug, it's a feature."
 description:         'A blog by software engineer and food enthusiast.'
 url:                 http://haisum.github.io/
 baseurl:             /
