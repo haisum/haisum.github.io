@@ -13,8 +13,8 @@ Here's what I did to put together this blog:
 
 - Install necessary tools (I was using ubuntu so here's what I needed):
 {% highlight bash %}
-	sudo apt-get install git
-	sudo apt-get install ruby ruby-dev
+sudo apt-get install git
+sudo apt-get install ruby ruby-dev
 {% endhighlight %}
 - Follow instructions for setting up repository on [github pages](https://pages.github.com/)
 - Follow [Using jekyll with GitHub pages](https://help.github.com/articles/using-jekyll-with-pages/) guide.
@@ -31,10 +31,10 @@ If all these intructions are jumble to you here's an easier set:
  - Extract all contents of my repository to your repository's folder.
  - cd to your repository's folder and run these:
 {% highlight bash %}
-	rm *.*
-	git add -A
-	git commit . -m "Adding templates and first Jekyll post"
-	git push origin master
+rm *.*
+git add -A
+git commit . -m "Adding templates and first Jekyll post"
+git push origin master
 {%endhighlight%}
  - It might ask you password/email and username so do provide it if asked.
  - Once push is succesfull, you will be able to see my blog on yourusername.github.io
