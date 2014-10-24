@@ -13,7 +13,7 @@ Features
 - No smtp authentication for local network 192.168.1.0/24
 - IMAP on dovecot authenticated by usernames and passwords of linux system users (create them using `useradd -m`)
 - Mail saved in ~/mail
-- Aliases set via regex `/test([0-9]*).(.*)@dev.pk/ $2@dev.pk in /etc/postfix/virtual_aliases
+- Aliases set via regex `/test([0-9]*).(.*)@dev.pk/ $2@dev.pk` in /etc/postfix/virtual_aliases
 - Run `postmap /etc/postfix/virtual_aliases`
 
 Postfix
@@ -129,9 +129,10 @@ service dict {
 
 {% endhighlight %}
 
-Source files:
+Source files
+--------
 
-	- [/etc/postfix/main.cf](/public/downloads/postfix/main.cf)
-	- [/etc/postfix/virtual_alias](/public/downloads/postfix/virtual_alias)
-	- [/etc/dovecot/dovecot.conf](/public/downloads/dovecot/dovecot.conf)
-	- [/etc/dovecot/conf.d/10-master.conf](/public/downloads/dovecot/conf.d/10-master.conf)
+- [/etc/postfix/main.cf](/public/downloads/postfix/main.cf)
+- [/etc/postfix/virtual_alias](/public/downloads/postfix/virtual_alias)
+- [/etc/dovecot/dovecot.conf](/public/downloads/dovecot/dovecot.conf)
+- [/etc/dovecot/conf.d/10-master.conf](/public/downloads/dovecot/conf.d/10-master.conf)
