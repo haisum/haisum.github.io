@@ -21,7 +21,7 @@ Postfix
 
 Here's what's changed from default in /etc/postfix/main.cf:
 
-```
+{% hightlight python %}
 inet_interfaces = all
 inet_protocols = all
 mydestination = $myhostname, localhost.$mydomain, localhost, dev.pk
@@ -33,15 +33,16 @@ smtpd_sasl_path = private/auth
 smtpd_sasl_local_domain = example.tst
 smtpd_sasl_security_options = noanonymous
 broken_sasl_auth_clients = yes
-smtpd_sasl_auth_enable = yessmtpd_recipient_restrictions = reject_unauth_destination,  reject_unauth_pipelining,   reject_non_fqdn_recipient,   reject_unknown_recipient_domain, permit_mynetworks
+smtpd_sasl_auth_enable = yes
+smtpd_recipient_restrictions = reject_unauth_destination,  reject_unauth_pipelining,   reject_non_fqdn_recipient,   reject_unknown_recipient_domain, permit_mynetworks
 virtual_alias_maps = regexp:/etc/postfix/virtual_alias
-```
+{% endhighlight %}
 
 Alias file (/etc/postfix/virtual_alias):
 
-```
+{% hightlight python %}
 /^test([0-9]*)\.(.*)@dev.pk/ $2@dev.pk
-```
+{% endhighlight %}
 
 
 Do `postmap /etc/postfix/virtual_alias` and `service postfix restart` after changing
@@ -51,7 +52,7 @@ Dovecot
 
 /etc/dovecot/dovecot.conf:
 
-```
+{% hightlight python %}
 protocols = imap pop3 
 login_trusted_networks = 192.168.1.0/24
 !include conf.d/*.conf
@@ -59,12 +60,12 @@ auth_debug_passwords=yes
 auth_username_format = %Ln
 mail_location = mbox:~/mail:INBOX=/var/spool/mail/%u
 mail_access_groups = mail
-```
+{% endhighlight %}
 Be sure to check mail_location and verify if your inbox is at /var/spool/mail/username
 
 /etc/dovecot/conf.d/10-master.conf:
 
-```
+{% hightlight python %}
 service imap-login {
   inet_listener imap {
     port = 143
@@ -126,10 +127,11 @@ service dict {
   }
 }
 
-```
+{% endhighlight %}
 
 Source files:
-- [/etc/postfix/main.cf](/public/downloads/postfix/main.cf)
-- [/etc/postfix/virtual_alias](/public/downloads/postfix/virtual_alias)
-- [/etc/dovecot/dovecot.conf](/public/downloads/dovecot/dovecot.conf)
-- [/etc/dovecot/conf.d/10-master.conf](/public/downloads/dovecot/conf.d/10-master.conf)
+
+	- [/etc/postfix/main.cf](/public/downloads/postfix/main.cf)
+	- [/etc/postfix/virtual_alias](/public/downloads/postfix/virtual_alias)
+	- [/etc/dovecot/dovecot.conf](/public/downloads/dovecot/dovecot.conf)
+	- [/etc/dovecot/conf.d/10-master.conf](/public/downloads/dovecot/conf.d/10-master.conf)
