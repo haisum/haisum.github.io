@@ -31,6 +31,8 @@ This makes sure that identity tokens are random and can't be guessed by anyone.
 
 ####TempTokens.class.php
 
+**Note:** *This isn't just a copy/paste code, you have to understand it and at least modify set and get methods of TempTokens class to make it work properly with your database.*
+
 {% highlight php %}
 <?php
 /**
@@ -176,3 +178,33 @@ class TempTokensType{
 }
 ?>
 {% endhighlight %}
+
+####Usage
+
+{% highlight php %}
+<?php
+require_once "TempTokens.class.php";
+require_once "TempTokensType.class.php";
+require_once "Database.class.php";
+
+$db = new Database($some, $params, $here);
+
+$tokens = new TempTokens($db);
+//set a token for user id 25
+//send this token in urls and once they hit back use get method to get uid
+if($token = $tokens->set(25, TempTokensType::REMEMBER_ME)){
+	//get token for user id 25
+	$uid = $tokens->get($token, TempTokensType::REMEMBER_ME);
+	var_dump($token, $uid);
+	if($uid == 25){
+		echo "success";
+	}
+	else{
+		echo "failed";
+	}
+}
+?>
+
+{% endhighlight %}
+
+When properly used, these can save you a lot of embarrasment that comes from someone hacking into your site. If you have any other questions regarding secure web apps or feedback for my approach, do let me know in comments. 
