@@ -1,0 +1,108 @@
+
+.form
+{
+	margin: 0;
+	text-align: left;
+}
+
+.form input,
+.form textarea,
+.form select
+{
+	margin: 0.2em 0 0.5em 0;
+	font-size: 0.9em;
+}
+
+.form fieldset
+{
+	border: 1px solid #DDD;
+	padding: 10px;
+	margin: 0 0 10px 0;
+	-moz-border-radius:7px;
+}
+
+.form label
+{
+	font-weight: bold;
+	font-size: 0.9em;
+	/*display: block;*/
+}
+
+.form .row
+{
+	margin: 5px 0;
+}
+
+.form .hint
+{
+	margin: 0;
+	padding: 0;
+	color: #999;
+}
+
+.form .note
+{
+	font-style: italic;
+}
+
+.form span.required
+{
+	color: red;
+}
+
+.form div.error label,
+.form label.error,
+.form span.error
+{
+	color: #C00;
+}
+
+.form div.error input,
+.form div.error textarea,
+.form div.error select,
+.form input.error,
+.form textarea.error,
+.form select.error
+{
+	background: #FEE;
+	border-color: #C00;
+}
+
+.form div.success input,
+.form div.success textarea,
+.form div.success select,
+.form input.success,
+.form textarea.success,
+.form select.success
+{
+	background: #E6EFC2;
+	border-color: #C6D880;
+}
+
+
+.form .errorSummary
+{
+	border: 2px solid #C00;
+	padding: 7px 7px 12px 7px;
+	margin: 0 0 20px 0;
+	background: #FEE;
+	font-size: 0.9em;
+}
+
+.form .errorMessage
+{
+	color: red;
+	font-size: 0.9em;
+}
+
+.form .errorSummary p
+{
+	margin: 0;
+	padding: 5px;
+}
+
+.form .errorSummary ul
+{
+	margin: 0;
+	padding: 0 0 0 20px;
+}
