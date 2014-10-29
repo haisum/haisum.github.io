@@ -7,18 +7,22 @@ A good friend recommended me [Earth View From Google Maps](https://chrome.google
 
 Here are some images it showed me:
 
-###Herefordshire United Kindom
+###Twist, Germany
+
+![Twist Germany](public/images/twist-germany.jpg)
+
+###Herefordshire, United Kindom
 
 ![Herefordshire United Kindom](/public/images/herefordshire-united-kingdom.jpg)
 
-###Kimbolton Australia
+###Kimbolton, Australia
 
 ![Kimbolton Australia](/public/images/kimbolton-australia.jpg)
 
-###Korgalzhyn Kazakhstan
+###Korgalzhyn, Kazakhstan
 
 ![Korgalzhyn Kazakhstan](/public/images/korgalzhyn-kazakhstan.jpg)
 
-###Sark Guernsey
+###Sark, Guernsey
 
 ![Sark Guernsey](/public/images/sark-guernsey.jpg)
