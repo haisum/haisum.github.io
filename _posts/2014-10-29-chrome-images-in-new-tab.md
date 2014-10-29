@@ -9,7 +9,7 @@ Here are some images it showed me:
 
 ###Twist, Germany
 
-![Twist Germany](public/images/twist-germany.jpg)
+![Twist Germany](/public/images/twist-germany.jpg)
 
 ###Herefordshire, United Kindom
 
