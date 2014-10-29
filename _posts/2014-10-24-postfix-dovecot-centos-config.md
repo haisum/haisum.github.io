@@ -21,7 +21,7 @@ Postfix
 
 Here's what's changed from default in /etc/postfix/main.cf:
 
-{% hightlight python %}
+{% highlight ruby %}
 inet_interfaces = all
 inet_protocols = all
 mydestination = $myhostname, localhost.$mydomain, localhost, dev.pk
@@ -40,7 +40,7 @@ virtual_alias_maps = regexp:/etc/postfix/virtual_alias
 
 Alias file (/etc/postfix/virtual_alias):
 
-{% hightlight python %}
+{% highlight ruby %}
 /^test([0-9]*)\.(.*)@dev.pk/ $2@dev.pk
 {% endhighlight %}
 
@@ -52,7 +52,7 @@ Dovecot
 
 /etc/dovecot/dovecot.conf:
 
-{% hightlight python %}
+{% highlight ruby %}
 protocols = imap pop3 
 login_trusted_networks = 192.168.1.0/24
 !include conf.d/*.conf
@@ -65,7 +65,7 @@ Be sure to check mail_location and verify if your inbox is at /var/spool/mail/us
 
 /etc/dovecot/conf.d/10-master.conf:
 
-{% hightlight python %}
+{% highlight python %}
 service imap-login {
   inet_listener imap {
     port = 143
