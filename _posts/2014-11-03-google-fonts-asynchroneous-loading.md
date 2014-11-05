@@ -3,6 +3,8 @@ layout: post
 title: Load Google fonts asynchroneously so they don't make your site unresponsive
 ---
 
+Google fonts are very popular among designers these days, they provide a way to use fancy fonts all across the web without worrying about their availability on client's computer. But with one problem that they solve, they bring one problem of their own: Synchroneous loading of fonts from Google servers and therefore pausing page render until they are downloaded. Resulting in a pause on every web page where google fonts are used.
+
 ![css selection google fonts](/public/images/google-fonts-select-css.png)
 
 ![javascript asynchroneous selection google fonts](/public/images/google-fonts-select-async-javascript.png)
