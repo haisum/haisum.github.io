@@ -21,7 +21,7 @@ Postfix
 
 Here's what's changed from default in /etc/postfix/main.cf:
 
-{% highlight ruby %}
+{% highlight ini %}
 inet_interfaces = all
 inet_protocols = all
 mydestination = $myhostname, localhost.$mydomain, localhost, dev.pk
@@ -52,7 +52,7 @@ Dovecot
 
 /etc/dovecot/dovecot.conf:
 
-{% highlight ruby %}
+{% highlight ini %}
 protocols = imap pop3 
 login_trusted_networks = 192.168.1.0/24
 !include conf.d/*.conf
@@ -65,7 +65,7 @@ Be sure to check mail_location and verify if your inbox is at /var/spool/mail/us
 
 /etc/dovecot/conf.d/10-master.conf:
 
-{% highlight python %}
+{% highlight nginx %}
 service imap-login {
   inet_listener imap {
     port = 143
