@@ -9,3 +9,4 @@ This page serves as a log for what I plan to write about in future.
 - Sockets Intro
 - Algorithms
 - Sphinx and Solr
+- Custom sitemap for jekyll
