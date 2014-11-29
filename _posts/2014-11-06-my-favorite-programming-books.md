@@ -2,7 +2,8 @@
 layout: post
 title: My favorite programming books
 ---
-I will try to list down all my favorite programming books here.
+
+Computer science is a huge and constantly changing field of study. To keep myself updated I study a lot of random books. Here's a short list of books I can recall right now. Will keep on adding more as I read more in future.
 
 The Linux Programming Interface by Michael Kerrisk
 -------------
