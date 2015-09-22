@@ -6,10 +6,11 @@ title: Ideas
 This page serves as a log for what I plan to write about in future.
 
 - Writing makes science possible
-- Sockets Intro
+- Sockets and tcp
 - Algorithms
-- Sphinx and Solr
-- Custom sitemap for jekyll
+- Sphinx, Solr and ElasticSearch
+- Distributed Systems
+- Fault tolerance
+- Functional Programming
 - Apache pagespeed module
 - Vagrant and docker
-- Apiary.io
