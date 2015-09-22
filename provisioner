@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+export DEBIAN_FRONTEND=noninteractive
+
+installpkg(){
+    dpkg-query --status $1 >/dev/null || apt-get install -y $1
+}
+
+#apt-get update
+installpkg ruby2.0
+installpkg ruby2.0-dev
+installpkg zlib1g-dev
+installpkg g++
+installpkg nodejs
+
+ln -sf /usr/bin/ruby2.0 /usr/bin/ruby
+ln -sf /usr/bin/gem2.0 /usr/bin/gem
+gem install bundler
+gem install therubyracer
