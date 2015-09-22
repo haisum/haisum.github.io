@@ -1,2 +1,6 @@
 *.lock
 _site
+.bash*
+.cache
+.gem
+.vagrant
