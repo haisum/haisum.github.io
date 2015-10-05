@@ -2,34 +2,8 @@
 layout: post
 title: Supported language highlighters in Pygments for Jekyll and GitHub Pages
 ---
-I wanted to highlight ini files in [postfix configuration post](/2014/10/24/postfix-dovecot-centos-config/) and was looking for a list of languages supported by jekyll's pygments plugin. So I could use it in {% raw %}{% highlight {language} %}{% endraw %} tag. But I couldn't find a proper list so I dig into pygments code documentation to find supported highlighters and landed on [Available Lexers](http://pygments.org/docs/lexers/) page on pygments.org site.
 
-To make your and mine life easier I setup a python `virtualenv` and did `pip install pygments` and wrote this script:
-
-{% highlight python %}
-from pygments.lexers import get_all_lexers
-
-lexers = get_all_lexers()
-print """
-<table>
-	<tr>
-		<th>
-			Format
-		</th>
-		<th>
-			Short names for highlight tag
-		</th>
-	</tr>
-""";
-for lexer in lexers:
-	print "<tr>\n"
-	print "\t<td>" + lexer[0] + "</td>"
-	print "\t<td>" + ", ".join(lexer[1]) + "</td>"
-	print"</tr>\n";
-print "</table>";
-{% endhighlight %}
-
-It yields us the required list in table. I found ini and cfg in the list so I used them as {% raw %}`{% highlight ini %}` and `{% highlight cfg %}`{% endraw %}. You can `CTRL+F` to look for your required highlighter:
+You can `CTRL+F` and search for your required highlighter:
 
 ##List of lexers/highlighters supported by pygments:
 
@@ -1743,3 +1717,34 @@ It yields us the required list in table. I found ini and cfg in the list so I us
 </tr>
 
 </table>
+
+### How this list was created
+
+I wanted to highlight ini files in [postfix configuration post](/2014/10/24/postfix-dovecot-centos-config/) and was looking for a list of languages supported by jekyll's pygments plugin. So I could use it in {% raw %}{% highlight {language} %}{% endraw %} tag. But I couldn't find a proper list so I dig into pygments code documentation to find supported highlighters and landed on [Available Lexers](http://pygments.org/docs/lexers/) page on pygments.org site.
+
+To make your and mine life easier I setup a python `virtualenv` and did `pip install pygments` and wrote this script:
+
+{% highlight python %}
+from pygments.lexers import get_all_lexers
+
+lexers = get_all_lexers()
+print """
+<table>
+	<tr>
+		<th>
+			Format
+		</th>
+		<th>
+			Short names for highlight tag
+		</th>
+	</tr>
+""";
+for lexer in lexers:
+	print "<tr>\n"
+	print "\t<td>" + lexer[0] + "</td>"
+	print "\t<td>" + ", ".join(lexer[1]) + "</td>"
+	print"</tr>\n";
+print "</table>";
+{% endhighlight %}
+
+It yields us the required list in table. I found ini and cfg in the list so I used them as {% raw %}`{% highlight ini %}` and `{% highlight cfg %}`{% endraw %}.
