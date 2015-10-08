@@ -26,27 +26,30 @@ We attempt to classify distributed systems based on nature of distribution of th
 
 ### Publish-Subscribe Applications
 
-In applications that fall in this category, processes may fall in one of following conditions: produces of information who publish and consumers of information who subscribe to information. This paradigm is often called *publish-subscribe* and is most common type of distributed architecture. Examples of such applications may be Stock exchange application, Sound and video streaming services and Bittorrent. 
-
-
-#to be continued...
+In applications that fall in this category, processes may fall in one of following conditions: produces of information who publish and consumers of information who subscribe to information. This paradigm is often called *publish-subscribe* and is most common type of distributed architecture. Examples of such applications may be Stock exchange application, Sound and video streaming services and Bittorrent.
 
 ### Process Control
 
+In process control applications several processes control a single physical activity. Most common example of this kind of applications is Aircraft or Train control in which data from multiple sensors controls the flight. Monitoring of nuclear power plant or car manufacturing assembly automated by several robotic arms.
+
+Every process in such a system is connected to a sensor, the goal is to perform a single task such as mapping aircraft on radar or control speed of train despite the possibility of failure in one of sensors.
 
 ### Cooperative Work
 
-
+Sometimes people connected with network from different nodes may want to collaborate on same task such as editing a document, a software or a video conference or group chat etc. Shared workspace is shown as single storage for all collaborators. Such operations can be achieved by getting different nodes to agree on order of reads and writes on the workspace.
 
 ### Distributed Databases
 
-
+Databases need to agree on whether to commit or discard a particular transaction. In a setup where there are multiple instances of databases in master/slave or master/master replication mode, in case of a transaction all nodes must detect if data is available to every other node and then commit. If failure such as error in data integrity, network or hardware failute is detected in any one node is detected, all nodes may abort the transaction. This problem is called *atomic commitment* problem.
 
 ### Distributed Storage
 
-
-
+A system where large amount of data is to be stored, it may not be sufficient to use a single system. Data is distributed among several nodes and presented to application is single large storage. In such systems, data is distributed among several nodes and copies of data are made on different nodes in case one of nodes fails. A single file may also be stored in parts on several nodes. Read and write operations are distributed on different nodes to load balance IO and increase throughput.
 
 ## References and Further Reading
 
+This article is a dumbed down version of chapter one in [Introduction to reliable secure distributed programming](http://www.amazon.com/Introduction-Reliable-Secure-Distributed-Programming/dp/3642152597/ref=sr_1_3?ie=UTF8&qid=1444293858&sr=8-3&keywords=reliable+distributed+systems) book. I recommend studying whole book as it will help in clarifying theoratical concepts of distributed systems. 
 
+[ETH Zurich's course](http://dcg.ethz.ch/lectures/podc_allstars/index.html) on Distributed Systems is also a great resource. Chapter 0 is good resource to reflect on concepts described in this article. 
+
+Expect more posts on distributed systems from me in future.
