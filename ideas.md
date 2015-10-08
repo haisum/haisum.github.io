@@ -5,12 +5,11 @@ title: Ideas
 
 This page serves as a log for what I plan to write about in future.
 
-- Writing makes science possible
-- Sockets and tcp
+- Sockets and tcp programming
 - Algorithms
 - Sphinx, Solr and ElasticSearch
-- Distributed Systems
-- Fault tolerance
+- Practical examples of Distributed Systems and Fault tolerance
+- Consensus and broadcast algorithms for distributed systems
 - Functional Programming
-- Apache pagespeed module
-- Vagrant and docker
+- Microservices on Kubernetes, CoreOS and Docker
+- Ansible
