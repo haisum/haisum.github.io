@@ -1,0 +1,6 @@
+---
+published: true
+title: Test post
+layout: post
+---
+this is a test post from tinypress
