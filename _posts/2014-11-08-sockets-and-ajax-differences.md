@@ -1,5 +1,5 @@
 ---
-title: Sockets and Ajax
+title: Ajax vs Sockets
 layout: post
 ---
 A friend asked me following questions so I replied with my understanding about sockets and ajax. It might be useful for others too:
@@ -20,7 +20,7 @@ A friend asked me following questions so I replied with my understanding about s
 
 - Frontend webframeworks do not care if you use web sockets or ajax (they do bias towards one at a point but u can override that).. These frameworks help us organize our Javascript which gets messy in no time. 
 
-- They support REST, rest is really good way of developing modern web apps. Ideally, rest would be HTTP based, but with some tweaks even sockets can be used. Check https://github.com/scttnlsn/backbone.io . Take an example, backbone sends this request on rest via ajax:
+- They support REST, REST is really good way of developing modern web apps. Ideally, REST would be HTTP based, but with some tweaks even sockets can be used. Check https://github.com/scttnlsn/backbone.io . Take an example, backbone sends this request on REST via ajax:
 {% highlight js %}
 method: "post"
 data : {"message" : "hello"}

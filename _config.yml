@@ -27,5 +27,4 @@ author:
 version:             1.0.0
 
 gems:
-  - jekyll-sitemap
   - jekyll-feed
