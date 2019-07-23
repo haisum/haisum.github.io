@@ -675,4 +675,4 @@ function db_ping($link = NULL) {
 ?>
 {% endhighlight %}
 
-Source code: [Db.class.php](/public/downloads/Db.class.php)
+Source code: [Db.class.php](https://gist.github.com/haisum/a63bca80ecac625fdad0b42c461f1f89)

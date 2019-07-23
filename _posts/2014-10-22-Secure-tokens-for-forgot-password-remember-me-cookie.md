@@ -14,11 +14,11 @@ Let's assume we have a url *http://example.com/verify.php?id=2132* which verifie
 
 Another example is remember me cookie, people save user ids in cookies and check for user ids in server side script to validate and login users without password. If I make a cookie with any user's id I can easily login.
 
-##Problem statement
+## Problem statement
 
 Fetch user id from database using user supplied data in cookies, post or get, such that user can't guess or access anyone else's user id.
 
-##Solution
+## Solution
 
 After a lot of research and thinking I came up with this solution:
 
@@ -27,9 +27,9 @@ After a lot of research and thinking I came up with this solution:
 
 This makes sure that identity tokens are random and can't be guessed by anyone.
 
-##Source code
+## Source code
 
-####TempTokens.class.php
+#### TempTokens.class.php
 
 **Note:** *This isn't just a copy/paste code, you have to understand it and at least modify set and get methods of TempTokens class to make it work properly with your database.*
 
@@ -141,7 +141,7 @@ if ($_SERVER['SCRIPT_FILENAME'] == __FILE__) {
 ?>
 {% endhighlight %}
 
-####TempTokensType.class.php
+#### TempTokensType.class.php
 
 {% highlight php %}
 <?php
@@ -179,7 +179,7 @@ class TempTokensType{
 ?>
 {% endhighlight %}
 
-####Usage
+#### Usage
 
 {% highlight php %}
 <?php
