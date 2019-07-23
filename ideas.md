@@ -12,4 +12,3 @@ This page serves as a log for what I plan to write about in future.
 - Consensus and broadcast algorithms for distributed systems
 - Functional Programming
 - Microservices on Kubernetes, CoreOS and Docker
-- Ansible
