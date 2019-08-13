@@ -1,0 +1,8 @@
+---
+layout: post
+title: AWS - Part 1 - Intent and Introduction
+---
+
+I have informally dealt with AWS whenever it's needed but haven't formally gone through all of it's services. With number of services provided by Amazon approaching more than 2000, it's virtually impossible to actually know about all of them. I am trying to do proper study of all of it's popular services and features so that I may have sort of complete functional knowledge of state of cloud computing. I will also study things I already know, in more depth, and do some hands on. As I proceed to do so, I intend to document all that I come accross on this blog so that I have notes for my future self and may come handy to any interested readers.
+
+I have purchased membership from A Cloud Guru to go through their courses and will try to add what I learn from there as well as from other related resources here. I am also interested in AWS Certified Solutions Architect Associate Certification, so once I complete all this I will attempt certification exam. [A curated list of AWS resources to prepare for the AWS Certifications](https://gist.github.com/leonardofed/bbf6459ad154ad5215d354f3825435dc) seems like a good list of resources to follow if someone is interested in giving certification exam. In addition to curriculum covered in A cloud guru course I will also read Amazon documentation and resources mentioned in above link to fill gaps in my knowledge.

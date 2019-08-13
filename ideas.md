@@ -11,3 +11,4 @@ This file serves as a log for what I plan to write about in future.
 - Some topics from Designing data intensive applications
 - Translation of interesting chapters of *Uhay Deenh Uhay Sheenh by Pir Ali Muhammad Rashdi*
 - Zuul proxy, ingress controller setup, spring boot admin, keycloak authentication
+- maven release plugin
