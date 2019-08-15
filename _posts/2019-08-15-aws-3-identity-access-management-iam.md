@@ -49,6 +49,10 @@ You may use [Policy Simulator](https://policysim.aws.amazon.com) to test and tro
 
 Temporary credentials consist of secret key, access key and a token which are only valid for a limited amount of time. They allow us to provide credentials which expire after a certain time. This allows improved security specially when calling APIs via mobile devices which can be lost. IAM users can request temporary security credentials for their own use by calling the AWS STS GetSessionToken API. The default expiration for these temporary credentials is 12 hours; the minimum is 15 minutes, and the maximum is 36 hours.
 
+### Faq page
+
+FAQ page for IAM is very detailed and contains answers to many questions so it's good to overview it. It also contains links to other useful resources so do read it if you have time. Link: [https://aws.amazon.com/iam/faqs/](https://aws.amazon.com/iam/faqs/)
+
 ## How to do it
 
 I covered a lot of theory above. Now let's do it practically.
