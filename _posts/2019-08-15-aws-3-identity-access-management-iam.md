@@ -54,6 +54,7 @@ Temporary credentials consist of secret key, access key and a token which are on
 I covered a lot of theory above. Now let's do it practically.
 
 Login into AWS console and you will see a list of services. Select IAM under Security, Identity and Compliance.
+
 ![IAM-1](/public/images/aws/IAM-1.png)
 
 You will be taken to IAM dashboard. Initially 4 out of 5 in Security Status will be red marks. You can go into each and do suggested to make them green.
@@ -61,12 +62,15 @@ You will be taken to IAM dashboard. Initially 4 out of 5 in Security Status will
 ![IAM-2](/public/images/aws/IAM-2.png)
 
 We will explore how to create users. In users tab, select add user.
+
 ![IAM-3](/public/images/aws/IAM-3.png)
 
 Select a name for user. You may want to give either or both of console and programmatic access to a user depending on use case. You can also auto generate or manually create a password for user. AWS can also force user to do a password reset on next login.
+
 ![IAM-4](/public/images/aws/IAM-4.png)
 
 Next step is to add user to a group. You may create a new group here.
+
 ![IAM-5](/public/images/aws/IAM-5.png)
 
 Click on create group button and a popup window will appear. Here you may want to select granular permissions for this group. For example, if you want user to have read only permissions to S3, you may create a group like this:
@@ -77,14 +81,18 @@ If you want to create group for administrators with all access, you may create a
 ![IAM-7](/public/images/aws/IAM-7.png)
 
 Next, you can add tags if you want to filter users according to some labels. Once user is created, you will get a success window with Access key, secret key and password. This information will only be presented to you once and can't be retrieved again. So it's good idea to Download.csv and share with user or send email.
+
 ![IAM-8](/public/images/aws/IAM-8.png)
 
 Once done, your user will start appearing in list of users.
+
 ![IAM-9](/public/images/aws/IAM-9.png)
 
 Since I shared password/access key here, I have disabled test_user and made access key inactive as shown below. You may disable/enable or recreate credentials of users in Security Credentials tab of user.
+
 ![IAM-10](/public/images/aws/IAM-10.png)
 
 Once user is created, you can share User Sign In link for your AWS account with your users and then they can use this link to login using credentials you generated earlier.
+
 ![IAM-11](/public/images/aws/IAM-11.png)
 
