@@ -11,7 +11,7 @@ title:               Haisum's Blog
 tagline:             "It's not a bug, it's a feature."
 description:         A blog by software engineer and food enthusiast.
 url:                 https://haisum.github.io
-baseurl:             https://haisum.github.io/
+baseurl:             /
 paginate:            5
 google_analytics_id: UA-56228338-1
 
