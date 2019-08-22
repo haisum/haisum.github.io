@@ -7,13 +7,25 @@ Storage Gateway is a hybrid service. It gives you on-premise access to cloud sto
 
 Gateway service provides three kinds of gateways, [Tape Gateway](https://aws.amazon.com/storagegateway/vtl/), [File Gateway](https://aws.amazon.com/storagegateway/file/), and [Volume Gateway](https://aws.amazon.com/storagegateway/volume/).
 
-### Tape Gateway
+### File Gateway (NFS & SMB)
+
+File gateway mounts as NFS or SMB network share location and lets you store files there which are then backed up to AWS S3. All ownership, permission and timestamps information is saved as metadata in S3 objects.
+
+### Tape Gateway (VTL)
 
 The Tape Gateway configuration is a cloud-based virtual tape library (VTL) that serves as a drop-in replacement for tape backup systems.
 
-### Volume Gateway
+### Volume Gateway (iSCSI)
 
-With a Volume Gateway configuration, you can take snapshots of your local volumes and store those snapshots in Amazon EBS. Those snapshots can be the starting point for an Amazon EBS volume, which you can then attach to an Amazon EC2 instance. In the event of a local site disaster simply set up your applications in the cloud or in a different datacenter, and restore your snapshot to keep running.
+With a Volume Gateway configuration, you can take snapshots of your local volumes and store those snapshots in Amazon EBS. Those snapshots can be the starting point for an Amazon EBS volume, which you can then attach to an Amazon EC2 instance. In the event of a local site disaster simply set up your applications in the cloud or in a different datacenter, and restore your snapshot to keep running. Volumes may be of type Stored or Cached.
+
+#### Stored Volumes
+
+Stored volume keeps your data local and asynchronously uploads your data to AWS S3 in form of Elastic Block Store.
+
+#### Cached Volumes
+
+Cached Volume stores latest accessed data from S3 on premises.
 
 ### Additional Resources:
 
