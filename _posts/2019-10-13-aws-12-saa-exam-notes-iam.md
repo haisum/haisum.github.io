@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS Solutions Architect Certification Exam Notes - IAM and Auth Services
+title: AWS SAA Certification Exam Notes - IAM and Auth Services
 ---
 
 These notes cover IAM, Cognito, Organizations, Web Identity Federation and Amazon's services for Active Directory.

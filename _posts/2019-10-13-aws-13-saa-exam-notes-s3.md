@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS Solutions Architect Certification Exam Notes - S3
+title: AWS SAA Certification Exam Notes - S3
 ---
 
 ### Buckets
