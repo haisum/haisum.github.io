@@ -78,12 +78,12 @@ Cognito monitors different devices you use. It then uses SNS to push updates to 
 
 ### AWS Directory Service
 
--   AWS Managed Microsoft AD is best for current AD or LDAP
--   Deployed to two AZ and connected to your VPC
--   Fully managed, no access to powershell or ssh/rdp.
--   A VPC with at least 2 subnets required
--   Seamless domain join can be used for connecting EC2 instance to your AD at launch time
--   Trust relationship to sync between on premise and AWS AD
+    -   AWS Managed Microsoft AD is best for current AD or LDAP
+    -   Deployed to two AZ and connected to your VPC
+    -   Fully managed, no access to powershell or ssh/rdp.
+    -   A VPC with at least 2 subnets required
+    -   Seamless domain join can be used for connecting EC2 instance to your AD at launch time
+    -   Trust relationship to sync between on premise and AWS AD
 
 #### Simple AD
 
@@ -99,18 +99,10 @@ Helps connect existing AD on premise to AWS
 
 ### Exam Tips
 
--   Service Accounts = Roles. No federation even if it’s
-    > on premises.
-
--   IAM trust policy allows EC2 instances to assume a
-    > role
-
--   IAM policy or S3 Bucket policy allows get/put from
-    > buckets in S3. Note: No S3 Trust Policy. Also IAM trust policy is
-    > required but it’s not required for S3.
-
--   IAM Certificate Store and Certificate Manager let
-    > you manage SSL certs
+    -   Service Accounts = Roles. No federation even if it’s on premises.
+    -   IAM trust policy allows EC2 instances to assume a role
+    -   IAM policy or S3 Bucket policy allows get/put from buckets in S3. Note: No S3 Trust Policy. Also IAM trust policy is required but it’s not required for S3.
+    -   IAM Certificate Store and Certificate Manager let you manage SSL certs
 
 ### References
 
