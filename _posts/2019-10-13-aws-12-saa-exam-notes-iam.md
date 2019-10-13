@@ -112,8 +112,6 @@ Helps connect existing AD on premise to AWS
 
 [http://jayendrapatil.com/aws-iam-overview/](http://jayendrapatil.com/aws-iam-overview/)
 
-
-
 [https://docs.aws.amazon.com/autoscaling/ec2/userguide/control-access-using-iam.html](https://docs.aws.amazon.com/autoscaling/ec2/userguide/control-access-using-iam.html)
 
 [https://aws.amazon.com/premiumsupport/knowledge-center/iam-policy-service-control-policy/](https://aws.amazon.com/premiumsupport/knowledge-center/iam-policy-service-control-policy/)

@@ -3,7 +3,6 @@ layout: post
 title: AWS Solutions Architect Certification Exam Notes - S3
 ---
 
-
 ### Buckets
 
 -   Name must be unique globally
@@ -126,16 +125,15 @@ Can notify on create/delete or loss of object in RRS to following:
 
 -   Objects in S3 are stored in different partitions based on name from left to right. To improve performance add random characters at the start of object name to put it in different partitions to improve performance.
 -   Domain used for s3 bucket: amazonaws.com
-        - http://mynewbucket.s3-aws-region.amazonaws.com
-        - http://s3-aws-region.amazonaws.com/mynewbucket
+    - http://mynewbucket.s3-aws-region.amazonaws.com
+    - http://s3-aws-region.amazonaws.com/mynewbucket
 -   Headers have x-amz-\* headers. Note: no x-aws
 -   Here are the prerequisites for routing traffic to a website that is hosted in an Amazon S3 Bucket:
-        - An S3 bucket that is configured to host a static website. 
-        - The bucket must have the same name as your domain or subdomain. For example, if you want to use the subdomain portal.tutorialsdojo.com, the name of the bucket must be portal.tutorialsdojo.com.
-        - A registered domain name. You can use Route 53 as your domain registrar, or you can use a different registrar.
-        - Route 53 as the DNS service for the domain. If you register your domain name by using Route 53, aws automatically configures Route 53 as the DNS service for the domain.
+    - An S3 bucket that is configured to host a static website. 
+    - The bucket must have the same name as your domain or subdomain. For example, if you want to use the subdomain portal.tutorialsdojo.com, the name of the bucket must be portal.tutorialsdojo.com.
+    - A registered domain name. You can use Route 53 as your domain registrar, or you can use a different registrar.
+    - Route 53 as the DNS service for the domain. If you register your domain name by using Route 53, aws automatically configures Route 53 as the DNS service for the domain.
 -   Objects must be stored **at least 30 days** in the current storage class before you can transition them to STANDARD\_IA or ONEZONE\_IA. For example, you cannot create a lifecycle rule to transition objects to the STANDARD\_IA storage class one day after you create them. Amazon S3 doesn't transition objects within the first 30 days because newer objects are often accessed more frequently or deleted sooner than is suitable for STANDARD\_IA or ONEZONE\_IA storage.
-
 -   If you are transitioning noncurrent objects (in versioned buckets), you can transition only objects that are at least 30 days noncurrent to STANDARD\_IA or ONEZONE\_IA storage.
 
 ### References
