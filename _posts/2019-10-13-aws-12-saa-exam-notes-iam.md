@@ -1,39 +1,27 @@
 ---
 layout: post
-title: AWS Solutions Architect Certification Exam Notes - IAM, Organization, Cognito, Active Directory, Identity Federation
+title: AWS Solutions Architect Certification Exam Notes - IAM and Auth Services
 ---
 
+These notes cover IAM, Cognito, Organizations, Web Identity Federation and Amazon's services for Active Directory.
 
-Role: Can be associated with resources like
-EC2/Cloudformation. Or assumed by user when they’re using Federation,
-SAML.
+### Role
 
-User: User with access key, secret key and
-password.
+Can be associated with resources like EC2/Cloudformation. Or assumed by user when they’re using Federation, SAML.
 
-Group: Group of users
+### User
+
+User with access key, secret key and password. Access key + secret key for API access. Password for console. Can enable MFA.
+
+### Group
+
+Group of users. Groups = organize multiple users. Can't put roles in groups.
 
 ### Policy
 
-Permissions for groups of users or roles. Policy can be
-of two types: Permission Policy and Permission Boundary. Permission
-Policy is permissions which are assigned to user or resource. This
-includes identity based, resource based and ACLs. Permission Boundary is
-for max permissions an object can have,
+Permissions for groups of users or roles. Policy can be of two types: Permission Policy and Permission Boundary. Permission Policy is permissions which are assigned to user or resource. This includes identity based, resource based and ACLs. Permission Boundary is for max permissions an object can have. To access resources in own account we need identity based policies. For cross account permissions we need resource based policies. By default all requests are denied. If there’s allow, then it’s allowed. Permission Boundary overrides allow. An explicit deny anywhere overrides allow.
 
-To access resources in own account we need identity
-based policies. For cross account permissions we need resource based
-policies.
-
-By default all requests are denied. If there’s allow,
-then it’s allowed. Permission Boundary overrides allow. An explicit deny
-anywhere overrides allow.
-
-### Exam tips
-
-IAM is eventually consistent.
-
-**What is web identity federation?**
+### What is web identity federation?
 
 Web identity federation allows you to create AWS-powered mobile apps that use public identity providers (such as [Amazon Cognito](https://aws.amazon.com/cognito/), [Login](http://login.amazon.com/) with Amazon, [Facebook](https://www.facebook.com/about/login), [Google](https://developers.google.com/+/), or any [OpenID Connect](http://openid.net/connect/)-compatible provider) for authentication.
 
@@ -46,7 +34,7 @@ AWS Organizations offers policy-based management for multiple AWS accounts. With
 
 AWS Organizations lets you use service control policies (SCPs) to allow or deny access to particular AWS services for individual AWS accounts, or for groups of accounts within an organizational unit (OU). The specified actions from an attached SCP affect all IAM users, groups, and roles for an account, including the root account identity.
 
-When you apply an SCP to an OU or an individual AWS account, you choose to either **enable** (whitelist), or **disable** (blacklist) the specified AWS service. Access to any service that isn’t explicitly allowed by the SCPs associated with an account, its parent OUs, or the master account is **denied** to the AWS accounts or OUs associated with the SCP.
+When you apply an SCP to an OU or an individual AWS account, you choose to either enable (whitelist), or disable (blacklist) the specified AWS service. Access to any service that isn’t explicitly allowed by the SCPs associated with an account, its parent OUs, or the master account is denied to the AWS accounts or OUs associated with the SCP.
 
 When an SCP is applied to an OU, it is inherited by all of the AWS accounts in that OU.
 
@@ -103,6 +91,7 @@ Helps connect existing AD on premise to AWS
 -   IAM trust policy allows EC2 instances to assume a role
 -   IAM policy or S3 Bucket policy allows get/put from buckets in S3. Note: No S3 Trust Policy. Also IAM trust policy is required but it’s not required for S3.
 -   IAM Certificate Store and Certificate Manager let you manage SSL certs
+-   IAM is eventually consistent.
 
 ### References
 

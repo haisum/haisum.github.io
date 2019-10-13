@@ -18,50 +18,42 @@ title: AWS Solutions Architect Certification Exam Notes - S3
 
 ### Storage Classes
 
-**S3 Standard**: For general purpose. Highly redundant and
-available 99.99% of the time. Durability: 11 9s.
+#### S3 Standard
 
-**S3 RRS**: Reduced redundancy but not recommended because
-S3 Standard is cheaper.
+For general purpose. Highly redundant and available 99.99% of the time. Durability: 11 9s.
 
-**S3 IA**: Infrequently Accessed Data. Available
-99.9%
+#### S3 RRS 
 
-**S3 IA One Zone**: Same as S3 IA but redundancy only in one
-AZ. Available 99.5%. Durable 11 9s but in one Zone.
+Reduced redundancy but not recommended because S3 Standard is cheaper.
 
-These two are good for objects that are more than 128 KB
-and can be stored for a minimum of 30 days. Otherwise Amazon charges you
-for one month and 128 KB.
+#### S3 IA
+Infrequently Accessed Data. Available 99.9%.
 
-**Glacier**: For archival. Can not specify glacier at object
-creation time. Must use lifecycle transition with 0 days to immediately
-transition. Must be at least 6 months storage. That’s what AWS charges
-for minimum.
+#### S3 IA One Zone
 
-Glacier Retrieval Options:
+Same as S3 IA but redundancy only in one AZ. Available 99.5%. Durable 11 9s but in one Zone.
 
-*Expedited*: Available within 1-5 Minutes
+These two are good for objects that are more than 128 KB and can be stored for a minimum of 30 days. Otherwise Amazon charges you for one month and 128 KB.
 
-*Standard*: Retrieves within 3-5 hours
+#### Glacier
+For archival. Can not specify glacier at object creation time. Must use lifecycle transition with 0 days to immediately transition. Must be at least 6 months storage. That’s what AWS charges for minimum.
 
-*Bulk*: Within 5-12 hours.
+##### Glacier Retrieval Options
+
+Expedited: Available within 1-5 Minutes
+Standard: Retrieves within 3-5 hours
+Bulk: Within 5-12 hours.
 
 Minimum 3 AZ used for standard,d IA and glacier.
 
 ### Transfer Acceleration
 
-Transfer Acceleration enables fast, easy, and secure
-transfers of files over long distances between your client and an S3
-bucket. It takes advantage of Amazon CloudFront’s globally distributed
-edge locations.
-
-Transfer Acceleration cannot be disabled, and can only
-be suspended.
+Transfer Acceleration enables fast, easy, and secure transfers of files over long distances between your client and an S3 bucket. It takes advantage of Amazon CloudFront’s globally distributed edge locations.
+Transfer Acceleration cannot be disabled, and can only be suspended.
 
 ### Objects
 
-- You can upload and copy objects of up to **5 GB** in size in a single operation. For objects greater than 5 GB up to 5 TB, you must use the multipart upload API
+- You can upload and copy objects of up to 5 GB in size in a single operation. For objects greater than 5 GB up to 5 TB, you must use the multipart upload API
 - You can associate up to 10 tags with an object. Tags associated with an object must have unique tag keys.
 
 ### Security
@@ -113,9 +105,9 @@ Can notify on create/delete or loss of object in RRS to following:
 ### Encryption
 
 -   Server-side Encryption using
-    -   **Amazon S3-Managed Keys (SSE-S3)**
-    -   **AWS KMS-Managed Keys (SSE-KMS)**
-    -   **Customer-Provided Keys (SSE-C)**
+    -   Amazon S3-Managed Keys (SSE-S3)
+    -   AWS KMS-Managed Keys (SSE-KMS)
+    -   Customer-Provided Keys (SSE-C)
 -   Client-side Encryption using
     -  AWS KMS-managed customer master key
     -  client-side master key
@@ -133,7 +125,7 @@ Can notify on create/delete or loss of object in RRS to following:
     - The bucket must have the same name as your domain or subdomain. For example, if you want to use the subdomain portal.tutorialsdojo.com, the name of the bucket must be portal.tutorialsdojo.com.
     - A registered domain name. You can use Route 53 as your domain registrar, or you can use a different registrar.
     - Route 53 as the DNS service for the domain. If you register your domain name by using Route 53, aws automatically configures Route 53 as the DNS service for the domain.
--   Objects must be stored **at least 30 days** in the current storage class before you can transition them to STANDARD\_IA or ONEZONE\_IA. For example, you cannot create a lifecycle rule to transition objects to the STANDARD\_IA storage class one day after you create them. Amazon S3 doesn't transition objects within the first 30 days because newer objects are often accessed more frequently or deleted sooner than is suitable for STANDARD\_IA or ONEZONE\_IA storage.
+-   Objects must be stored at least 30 days in the current storage class before you can transition them to STANDARD\_IA or ONEZONE\_IA. For example, you cannot create a lifecycle rule to transition objects to the STANDARD\_IA storage class one day after you create them. Amazon S3 doesn't transition objects within the first 30 days because newer objects are often accessed more frequently or deleted sooner than is suitable for STANDARD\_IA or ONEZONE\_IA storage.
 -   If you are transitioning noncurrent objects (in versioned buckets), you can transition only objects that are at least 30 days noncurrent to STANDARD\_IA or ONEZONE\_IA storage.
 
 ### References
