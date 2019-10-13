@@ -21,13 +21,20 @@ title: AWS SAA Certification Exam Notes - Cloudfront
 - Signed URLs and Signed Cookies can be used for temporary access to cloudfront urls
 - OAI: Origin access identity so users can’t access S3 bucket directly. They can only do so via cloudfront.
 - You have to use an Application Load Balancer instead or a CloudFront web distribution to allow the SNI feature.
+- Can set failover origins. Can also use cloudfront for on-premises origin.
 
 ### References
 
 [https://tutorialsdojo.com/aws-cheat-sheet-amazon-cloudfront/](https://tutorialsdojo.com/aws-cheat-sheet-amazon-cloudfront/)
+
 [https://s3-accelerate-speedtest.s3-accelerate.amazonaws.com/en/accelerate-speed-comparsion.html ](https://s3-accelerate-speedtest.s3-accelerate.amazonaws.com/en/accelerate-speed-comparsion.html )
+
 [https://tutorialsdojo.com/aws-cheat-sheet-s3-pre-signed-urls-vs-cloudfront-signed-urls-vs-origin-access-identity-oai/](https://tutorialsdojo.com/aws-cheat-sheet-s3-pre-signed-urls-vs-cloudfront-signed-urls-vs-origin-access-identity-oai/)
+
 [https://aws.amazon.com/cloudfront/features/ ](https://aws.amazon.com/cloudfront/features/ )
+
 [https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html ](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html )
+
 [https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html ](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html )
+
 [https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-cookies.html](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-cookies.html)
