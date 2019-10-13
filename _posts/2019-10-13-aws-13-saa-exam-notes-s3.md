@@ -40,9 +40,9 @@ For archival. Can not specify glacier at object creation time. Must use lifecycl
 
 ##### Glacier Retrieval Options
 
-Expedited: Available within 1-5 Minutes
-Standard: Retrieves within 3-5 hours
-Bulk: Within 5-12 hours.
+**Expedited**: Available within 1-5 Minutes
+**Standard**: Retrieves within 3-5 hours
+**Bulk**: Within 5-12 hours.
 
 Minimum 3 AZ used for standard,d IA and glacier.
 
