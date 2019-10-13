@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS Solutions Architect Certification Exam Notes - IAM
+title: AWS Solutions Architect Certification Exam Notes - IAM, Organization, Cognito, Active Directory, Identity Federation
 ---
 
 
