@@ -12,11 +12,11 @@ This brutality has affected children and women too. For example, here are severa
 <div class="video-container">
 <iframe width="910" height="512" src="https://www.youtube.com/embed/AIkulSHRBaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
+<br/>
 <div class="video-container">
 <iframe width="910" height="512" src="https://www.youtube.com/embed/MKJJS2uYzY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
+<br/>
 <div class="video-container">
 <iframe width="910" height="512" src="https://www.youtube.com/embed/urRENlRFBUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -34,11 +34,11 @@ Unfortunately, world remains silent as Holocaust 2.0 happens in China and India.
 
 ## Other Resources on Kashmir Blockade
 
-### US Senator Ilhan Omar Questioning Indian Representatives on Opression in Kashmir
+#### US Senator Ilhan Omar Questioning Indian Representatives on Opression in Kashmir
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The moment when the lies of Godi Media were exposed on an international forum. <a href="https://t.co/ynBsiWMQcl">pic.twitter.com/ynBsiWMQcl</a></p>&mdash; علي (@OpusOfAli) <a href="https://twitter.com/OpusOfAli/status/1186965564469760000?ref_src=twsrc%5Etfw">October 23, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-### A Reddit Post showing summary of what's happening in Kashmir in 107 seconds.
+#### A Reddit Post showing summary of what's happening in Kashmir in 107 seconds.
 
 <blockquote class="reddit-card" data-card-created="1571861212"><a href="https://www.reddit.com/r/pakistan/comments/dluw5n/kashmir_in_107_seconds_dont_blink/">Kashmir in 107 seconds. Don't blink.</a> from <a href="http://www.reddit.com/r/pakistan">r/pakistan</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
