@@ -20,6 +20,7 @@ This brutality has affected children and women too. For example, here are severa
 <div class="video-container">
 <iframe width="910" height="512" src="https://www.youtube.com/embed/urRENlRFBUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+<br/>
 
 Indian government has imprisoned all political leaders of Kashmir as well. So world has no way of listening to voices of locked Kashmiris.
 
