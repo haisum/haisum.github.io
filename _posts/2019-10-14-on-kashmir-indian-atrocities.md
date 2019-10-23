@@ -8,12 +8,18 @@ As I write this, it's been two months since people of Kashmir were stripped of t
 According to some estimates half of Indian Army is currently deployed in Kahsmir, that's 700,000 or 7 Million for an area with population of 120,000 or 12 Million. So there's 1 Soldier for 2 people in Kashmir. When you bring millitary to an area, human rights violations happen. These army men come from all parts of India where they have been brainwashed by their cancerous media about Kashmir. They show no sympathy to people of Kashmir. There have been many reports of rapes, tortures, kidnappings and civilian deaths.
 
 This brutality has affected children and women too. For example, here are several reports by BBC:
-
+	
+<div class="video-container">
 <iframe width="910" height="512" src="https://www.youtube.com/embed/AIkulSHRBaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
+<div class="video-container">
 <iframe width="910" height="512" src="https://www.youtube.com/embed/MKJJS2uYzY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
+<div class="video-container">
 <iframe width="910" height="512" src="https://www.youtube.com/embed/urRENlRFBUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Indian government has imprisoned all political leaders of Kashmir as well. So world has no way of listening to voices of locked Kashmiris.
 
@@ -24,3 +30,15 @@ This is what happened in Holocaust. First, Jews were all imprisoned in Ghettos. 
 I know a lot of wonderful people from India. Indians are vital part of world. They're Engineers, Doctors, IT Experts, Economists, Businessmen. They're everywhere. India has more languages spoken, more religions, more cultures than any other country in the world. They should be the defintion of secularism. Unfortunately they're being trapped into becoming hindu nationalists. Due to their cancerous media, even educated, intelligent Indians are supporting their government. India has great potential, it shouldn't dig it's own downfall by become an extremist country. Any sane voice is silenced. People in India who are sane and do raise sensible points are silenced by calling them traitors. It's just a very sad situation overall for Kasmiris and Indians.
 
 Unfortunately, world remains silent as Holocaust 2.0 happens in China and India. World did step up in 1939, it's  time we stand against these brutalities once more before it's too late for humanity.
+
+
+## Other Resources on Kashmir Blockade
+
+### US Senator Ilhan Omar Questioning Indian Representatives on Opression in Kashmir
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The moment when the lies of Godi Media were exposed on an international forum. <a href="https://t.co/ynBsiWMQcl">pic.twitter.com/ynBsiWMQcl</a></p>&mdash; علي (@OpusOfAli) <a href="https://twitter.com/OpusOfAli/status/1186965564469760000?ref_src=twsrc%5Etfw">October 23, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+### A Reddit Post showing summary of what's happening in Kashmir in 107 seconds.
+
+<blockquote class="reddit-card" data-card-created="1571861212"><a href="https://www.reddit.com/r/pakistan/comments/dluw5n/kashmir_in_107_seconds_dont_blink/">Kashmir in 107 seconds. Don't blink.</a> from <a href="http://www.reddit.com/r/pakistan">r/pakistan</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
