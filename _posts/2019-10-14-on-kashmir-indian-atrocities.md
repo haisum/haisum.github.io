@@ -35,6 +35,10 @@ Unfortunately, world remains silent as Holocaust 2.0 happens in China and India.
 
 ## Other Resources on Kashmir Blockade
 
+#### Pakistan's proofs on the State Sponsored Terrorism by India
+
+[Specific proof of Indian terrorism in Pakistan unveiled](https://www.dawn.com/news/1590441)
+
 #### US Senator Ilhan Omar Questioning Indian Representatives on Opression in Kashmir
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The moment when the lies of Godi Media were exposed on an international forum. <a href="https://t.co/ynBsiWMQcl">pic.twitter.com/ynBsiWMQcl</a></p>&mdash; علي (@OpusOfAli) <a href="https://twitter.com/OpusOfAli/status/1186965564469760000?ref_src=twsrc%5Etfw">October 23, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
