@@ -64,7 +64,7 @@ A good solution would be to enforce foreign key relations but MySQL based websit
 
 ### Search Engine Algorithm updates
 
-Google and other search engines are becoming smarter day by day. See the [log of Google Updates](http://moz.com/google-algorithm-change). Many sites are hit by these updates and their rankings are blown off to bottom. Panda update was specifically designed to flushing low quality content sites. No wonder if half of your data is dumped and not unqiue, you will be penalized no matter how much you paraphrase. You can check [Google ngrams](https://books.google.com/ngrams) to have an idea of how Google can catch paraphrased content.
+Google and other search engines are becoming smarter day by day. See the [log of Google Updates](https://www.websiteplanet.com/blog/ultimate-beginners-guide-google-analytics/). Many sites are hit by these updates and their rankings are blown off to bottom. Panda update was specifically designed to flushing low quality content sites. No wonder if half of your data is dumped and not unqiue, you will be penalized no matter how much you paraphrase. You can check [Google ngrams](https://books.google.com/ngrams) to have an idea of how Google can catch paraphrased content.
 
 A good site structure with proper seo friendly URLs is a good and white hat approach for getting ranking. But be careful, too much linking may lead to making multiple urls to same content and hence getting penalized for duplicate content. Google's Penguin update was rolled out to tackle low quality links.
 
