@@ -8,29 +8,29 @@ In Go, errors are values. Rob Pike has a [Go blog post](https://blog.golang.org/
 Recently while writing code for a Kubernetes Operator interacting with an external API, I was asked to only retry in specific scenarios such as DNS lookup failure and timeouts. Unfortunately, the errors returned from http.Client are not documented so I had to dig down in code to see what errors it returned and boy what a wild ride it was! Here's what I ultimately came up with:
 
 ```go
-errMsg = err.Error()
+errMsg := err.Error()
 switch err.(type) {
 	case *url.Error:
-		err += " url.Error"
-		nestedErr := e.Err.(*url.Error).Err
+		errMsg += " url.Error"
+		nestedErr := err.(*url.Error).Err
 		switch nestedErr.(type) {
 		case *net.OpError:
-			err += "net.OpError"
+			errMsg += "net.OpError"
 			opError := nestedErr.(*net.OpError).Err
 			switch opError.(type) {
 			case *net.AddrError:
-				err += "net.AddrError"
+				errMsg += "net.AddrError"
 			case *net.DNSError:
-				err += "net.DNSError;"
-				err += "notfound=" + strconv.FormatBool(opError.(*net.DNSError).IsNotFound)
+				errMsg += "net.DNSError;"
+				errMsg += "notfound=" + strconv.FormatBool(opError.(*net.DNSError).IsNotFound)
 			case *net.InvalidAddrError:
-				err += "net.InvalidAddrError"
+				errMsg += "net.InvalidAddrError"
 			case *net.ParseError:
-				err += "net.ParseError"
+				errMsg += "net.ParseError"
 			case *net.UnknownNetworkError:
-				err += "net.UnknownNetworkError"
+				errMsg += "net.UnknownNetworkError"
 			case *os.SyscallError:
-				err += "os.SyscallError"
+				errMsg += "os.SyscallError"
 			}
 		}
 }
